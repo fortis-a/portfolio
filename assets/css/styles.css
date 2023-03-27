@@ -390,6 +390,8 @@ img {
 .button--flex{
   display: inline-flex;
   align-items: center;
+  border: none;
+  font-size: var(--body-font);
 }
 
 .button--small{
@@ -405,7 +407,6 @@ img {
 .button--link:hover{
   background-color: transparent;
   color: var(--first-color-alt);
-
 }
 
 /*==================== ABOUT ====================*/
@@ -762,8 +763,13 @@ img {
   color: var(--first-color);
 }
 
+/* .portfolio_data{
+  margin-left: 10%;
+} */
+
+
 .swiper-button-prev{
-  left: 1.5rem;
+  left: -1.5rem;
 }
 
 .swiper-button-next{
@@ -812,45 +818,7 @@ img {
   justify-self: center;
 }
 
-/*==================== TESTIMONIAL ====================*/
-.testimonial_data,
-.testimonial_header{
-  display: flex;
-}
 
-.testimonial_data{
-  justify-content: space-between;
-  margin-bottom: var(--mb-1);
-}
-
-.testimonial_img{
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: var(--mb-0-75);
-}
-
-.testimonial_name{
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-}
-
-.testimonial_client{
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.testimonial_description{
-  margin-bottom: var(--mb-2-5);
-}
-
-.testimonial_icon-star{
-  color: var(--first-color);
-}
-
-.swiper-container .swiper-pagination-testimonial{
-  bottom: 0;
-}
 
 /*==================== CONTACT ME ====================*/
 .contact_container{
@@ -1003,6 +971,7 @@ img {
   background-color: var(--text-color-light);
 }
 /*==================== MEDIA QUERIES ====================*/
+
 /* For small devices */
 @media screen and (max-width: 360px){
   .container{
@@ -1039,25 +1008,16 @@ img {
     padding-right: 3.5rem;
   }
   .services_modal{
-    padding: 0rem .5rem;
+    padding: 0 .5rem;
   }
   .project_img{
     width: 200px;
   }
 
-  .testimonial_data,
-  .testimonial_header{
-    flex-direction: column;
-    align-items: center;
+  .swiper-button-prev{
+    margin-left: 10px;
   }
-  .testimonial_img{
-    margin-right: 0;
-    margin-bottom: var(--mb-0-25);
-  }
-  .testimonial_data,
-  .testimonial_description{
-    text-align: center;
-  }
+
 }
 
 /* For medium devices */
@@ -1073,27 +1033,13 @@ img {
     justify-self: center;
   }
 
-
-
   .about_container,
   .skills_container,
-  .portfolio_container,
+  .portfolio_content,
   .project_container,
   .contact_container,
   .footer_container{
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .portfolio_data{
-    margin-left: 130px;
-  }
-
-  .swiper-button-next{
-    margin-right: 120px;
-  }
-
-  .swiper-button-prev{
-    margin-left: 90px;
   }
 
   .qualification_sections{
@@ -1239,13 +1185,13 @@ img {
   .project_container{
     background-color: var(--first-color-second);
     border-radius: 1rem;
-    padding: 3rem 2,5rem 0;
+    padding: 3rem 2.5rem 0;
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;
   }
   .project_data{
     padding-top: .8rem;
-    padding-left: 20px;
+    /* padding-left: 20px; */
   }
 
   .footer_container{
