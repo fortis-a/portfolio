@@ -1055,6 +1055,7 @@ img {
   }
 }
 
+/* For large devices (Desktops) */
 @media screen and (min-width: 768px){
   .container{
     margin-left: auto;
@@ -1184,10 +1185,8 @@ img {
   }
   .project_container{
     background-color: var(--first-color-second);
-    border-radius: 1rem;
-    padding: 3rem 2.5rem 0;
-    grid-template-columns: 1fr max-content;
-    column-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
   .project_data{
     padding-top: .8rem;
@@ -1196,6 +1195,7 @@ img {
 
   .footer_container{
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
   .footer_bg{
     padding: 3rem 0 3.5rem;
@@ -1214,45 +1214,45 @@ img {
 }
 
 /* For large devices */
-@media screen and  (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .header,
   .main,
-  .footer_container{
+  .footer_container {
     padding: 0;
   }
 
-  .home_blob{
+  .home_blob {
     width: 320px;
   }
-  .home_social{
+  .home_social {
     transform: translateX(-6rem);
   }
 
-  .services_container{
+  .services_container {
     grid-template-columns: repeat(3, 238px);
   }
 
-  .portfolio_content{
+  .portfolio_content {
     column-gap: 5rem;
   }
-  .swiper-portfolio-icon{
+  .swiper-portfolio-icon {
     font-size: 3.5rem;
   }
-  .swiper-button-prev{
+  .swiper-button-prev {
     left: -3.5rem;
   }
   .swiper-button-next{
     right: -3.5rem;
   }
-  .mySwiper > .swiper-pagination-bullets{
+  .mySwiper > .swiper-pagination-bullets {
     bottom: -4.5rem;
   }
-  .contact_form{
+  .contact_form {
     width: 460px;
     
   }
   .contact_inputs{
-grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-  }
+      }
   }
