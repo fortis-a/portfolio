@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Fortis – GIS & Front-End Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+
+    <!-- Optional Icons -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    >
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Andrea Fortis</a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">GIS Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="container">   
+        <div class="titleHero">
+            <h1 class="display-4 fw-bold">Andrea Fortis</h1>
+            <h2 class="mt-3 fs-4">GIS Technician • Front-End Developer • Biologist</h2>
+            <p class="lead mt-3 mb-4">
+                Bridging the gap between environmental science and technology.
+            </p>
+        </div>    
+            <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">About Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p>
+                    I am a GIS and front-end development professional with a strong foundation 
+                    in biology, ecological restoration, and environmental fieldwork. I specialize 
+                    in building interactive web mapping applications and producing high-quality 
+                    spatial analysis for conservation and environmental projects.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center">Skills</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="fw-bold">Technical Skills</h5>
+                <ul>
+                    <li>JavaScript, React, HTML, CSS, Bootstrap</li>
+                    <li>Leaflet, Mapbox, ArcGIS JS API</li>
+                    <li>ArcGIS Pro, ArcGIS Online, QGIS</li>
+                    <li>PostgreSQL, PostGIS, pgAdmin, GeoServer</li>
+                    <li>Git, GitHub, Scrum</li>
+                    <li>UI/UX design with Figma</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h5 class="fw-bold">Environmental & Field Skills</h5>
+                <ul>
+                    <li>Ecological restoration & species identification</li>
+                    <li>Environmental sampling & field data collection</li>
+                    <li>Technical reporting (English & Spanish)</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center MB-4">Featured Projects</h2>
+        
+        <!-- Bootstrap Nav Pills (The Filter Buttons) -->
+         <ul class="nav nav-pills justify-content-center mb-5" id="projectTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="web-tab" data-bs-toggle="pill" data-bs-target="#web" type="button" role="tab" aria-selected="true">
+                    Web & GIS Development
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="figma-tab" data-bs-toggle="pill" data-bs-target="#figma" type="button" role="tab" aria-selected="false">
+                    UI/UX & Figma Design
+                </button>
+            </li>
+        </ul>
+
+         <!-- Tab Content Area -->
+        <div class="tab-content" id="projectTabsContent">
+                 
+            <!-- TAB 1: WEB PROJECTS (Active by default) -->
+            <div class="tab-pane fade show active" id="web" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Project Card -->
+                    <div class="col-md-4">
+                        <!-- Note: added 'h-100' here to make all cards equal height -->
+                        <div class="card project-card shadow-sm h-100">
+                            <img src="Assets/img/project1.png" class="card-img-top" alt="Ontario Parks Web Map">
+                            <!-- Added flex utilities to push buttons to the bottom -->
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Web Mapping App</h5>
+                                <p class="card-text flex-grow-1">
+                                    Interactive ArcGIS JavaScript API map visualizing Provincial Ontario Parks.
+                                </p>
+                                <div class="mt-auto">
+                                    <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                                    <a href="https://afortisb.github.io/Provincial-Ontario-Parks/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card shadow-sm h-100">
+                            <img src="Assets/img/frontenac.png"  class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Mapping App</h5>
+                                <p class="card-text">
+                                    Interactive ArcGIS JavaScript API map visualizing wetlands at Frontenac Provincial Parks.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                                <a href="https://afortisb.github.io/frontenac_wetlands/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card shadow-sm">
+                            <img src="Assets/img/kitchenerParks.png"  class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Mapping App</h5>
+                                <p class="card-text">
+                                    Interactive Leaflet map visualizing Parks in Kitchener, ON.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                                <a href="https://afortisb.github.io/Parks-Kitchener/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card shadow-sm">
+                            <img src="Assets/img/todo.png"  class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">ToDo List App App</h5>
+                                <p class="card-text">
+                                    Interactive ToDo List - Used JavaScript, HTML and CSS.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                                <a href="https://fortis-a.github.io/ToDoList/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card shadow-sm">
+                            <img src="Assets/img/kitchenerParks.png"  class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Mapping App</h5>
+                                <p class="card-text">
+                                    Interactive Leaflet map visualizing Parks in Kitchener, ON.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                                <a href="https://afortisb.github.io/Parks-Kitchener/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card shadow-sm">
+                            <img src="Assets/img/kitchenerParks.png"  class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Mapping App</h5>
+                                <p class="card-text">
+                                    Interactive Leaflet map visualizing Parks in Kitchener, ON.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                                <a href="https://afortisb.github.io/Parks-Kitchener/" target="_blank" class="btn btn-primary btn-sm">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <!-- TAB 2: FIGMA PROJECTS -->
+            <div class="tab-pane fade" id="figma" role="tabpanel">
+                <div class="row g-4">
+                    
+                    <!-- Figma Project Card -->
+                    <div class="col-md-4">
+                        <div class="card project-card shadow-sm h-100">
+                            <img src="Assets/img/prototype1.png" class="card-img-top" alt="Figma Design Preview">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Freelance Services Platform</h5>
+                                <p class="card-text flex-grow-1">
+                                    UI design project creating a comprehensive, user-friendly freelance platform.
+                                </p>
+                                <div class="mt-auto">
+                                    <!-- Added a FontAwesome Figma icon -->
+                                    <a href="https://www.figma.com/design/jXM5gNjlKF4qX7NL4nIlPu/Jobatra?node-id=22-1035&m=dev&t=pYCqPIJ025phNVcu-1" target="_blank" class="btn btn-dark btn-sm">
+                                        <i class="fa-brands fa-figma"></i> View Prototype
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card shadow-sm h-100">
+                            <img src="Assets/img/prototype2.png" class="card-img-top" alt="Figma Design Preview">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Gaming Review Platform UI</h5>
+                                <p class="card-text flex-grow-1">
+                                    Figma prototype for a gaming platform. Features include user authentication, interactive review systems, and game discovery..
+                                </p>
+                                <div class="mt-auto">
+                                    <!-- Added a FontAwesome Figma icon -->
+                                    <a href="https://www.figma.com/design/s11pMmUqAAglWHU8JkezPp/Proyecto-final?node-id=0-1&t=SQhMozw4p9BV0C2P-1" target="_blank" class="btn btn-dark btn-sm">
+                                        <i class="fa-brands fa-figma"></i> View Prototype
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card shadow-sm h-100">
+                            <img src="Assets/img/prototype3.png" class="card-img-top" alt="Figma Design Preview">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Marine Biology Blog UI</h5>
+                                <p class="card-text flex-grow-1">
+                                    Figma prototype for a personal marine life publication. Focused on content readability and user engagement through structured post feeds and interactive media galleries.
+                                </p>
+                                <div class="mt-auto">
+                                    <!-- Added a FontAwesome Figma icon -->
+                                    <a href="https://www.figma.com/design/CnkxDohjSJxHGWJFy1cTq4/Blog?node-id=12-2319&t=ifuclbxmHJDtnaB6-1" target="_blank" class="btn btn-dark btn-sm">
+                                        <i class="fa-brands fa-figma"></i> View Prototype
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>        
+        </div>
+    </div>
+    
+</section>
+
+<section id="gallery" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center">GIS Gallery</h2>
+
+        <div id="gisCarousel" class="carousel slide" data-bs-ride="carousel">
+            
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gisCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#gisCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#gisCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#gisCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#gisCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#gisCarousel" data-bs-slide-to="5"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video width="420" height="640" controls src="Assets/vid/ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4" class="d-block w-100 rounded shadow">
+                </div>
+
+                <div class="carousel-item">
+                    <button class="border-0 bg-transparent p-0 w-100" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modalWatershed">
+                        <img src="Assets/img/watershed.png" class="d-block w-100 rounded shadow" alt="">
+                    </button>
+                </div>
+
+                <div class="carousel-item">
+                    <button class="border-0 bg-transparent p-0 w-100" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modalCougar">
+                            <img src="Assets/img/CougarHabitat.png" class="d-block w-100 rounded shadow" alt="Cougar Habitat">
+                    </button>
+                </div>
+
+                <div class="carousel-item">
+                    <button class="border-0 bg-transparent p-0 w-100" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modalMassasauga">
+                        <img src="Assets/img/MassasaugaPark.png" class="d-block w-100 rounded shadow" alt="Massasauga Park">
+                    </button>
+                </div>
+
+                <div class="carousel-item">
+                    <button class="border-0 bg-transparent p-0 w-100" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modalFathom">
+                        <img src="Assets/img/fathonFive.png" class="d-block w-100 rounded shadow" alt="Fathom Five">
+                    </button>
+                </div>
+
+                <div class="carousel-item">
+                    <button class="border-0 bg-transparent p-0 w-100" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#modalEthnic">
+                        <img src="Assets/img/ethnic.png" class="d-block w-100 rounded shadow" alt="Ethnic Distribution">
+                    </button>
+                </div>
+
+            </div>
+            
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#gisCarousel" data-bs-slide="prev">
+                <span class="fas fa-arrow-left" style="color: black;"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#gisCarousel" data-bs-slide="next">
+                <span class="fas fa-arrow-right"></span>
+            </button>
+
+        </div>
+        <!-- Watershed Modal -->
+    <div class="modal fade" id="modalWatershed" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+            <img src="Assets/img/watershed.png" class="img-fluid w-100" alt="">
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Cougar Habitat Modal -->
+    <div class="modal fade" id="modalCougar" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+            <img src="Assets/img/CougarHabitat.png" class="img-fluid w-100" alt="">
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Massasauga Modal -->
+    <div class="modal fade" id="modalMassasauga" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+            <img src="Assets/img/MassasaugaPark.png" class="img-fluid w-100" alt="">
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Fathom Five Modal -->
+    <div class="modal fade" id="modalFathom" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+            <img src="Assets/img/fathonFive.png" class="img-fluid w-100" alt="">
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Ethnic Map Modal -->
+    <div class="modal fade" id="modalEthnic" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark">
+        <div class="modal-body p-0">
+            <img src="Assets/img/ethnic.png" class="img-fluid w-100" alt="">
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Experience</h2>
+
+        <div class="timeline">
+            <h5 class="fw-bold">Research Assistant – Francisco Gavidia University</h5>
+            <p>Collected and validated ecological datasets; contributed to environmental reports.</p>
+
+            <h5 class="fw-bold mt-4">Volunteer Web Developer – Alakasam</h5>
+            <p>Built responsive UI with React; designed Figma prototypes.</p>
+
+            <h5 class="fw-bold mt-4">Environmental Consultant Assistant – ICSEM</h5>
+            <p>Field data collection and reporting for environmental impact assessments.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <strong>andrea.fortisb@gmail.com</strong></p>
+        <p>
+            <a href="https://www.linkedin.com/in/andrea-fortis-0b14b8ab/" class="me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/fortis-a" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        </p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+    <p>© 2026 Andrea – GIS & Front-End Portfolio</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>

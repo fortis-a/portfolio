@@ -1,0 +1,157 @@
+/* Global */
+body {
+    background-color: #F7FDF8; /* soft eco white-green */
+    color: #1B1B1B;
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #1B5E20; /* evergreen */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #1B5E20 !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #0277BD !important; /* water blue */
+}
+
+/* Hero */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.233)), url('../img/Contour.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;              /* full browser height */
+    display: flex;              /* center content */
+    align-items: center;        /* vertical centering */
+    justify-content: center;    /* horizontal centering */
+    text-align: center;
+    padding: 0;                 /* remove extra spacing */
+}
+.titleHero {
+   
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ffffff;
+}
+.hero h1 {
+    font-family: 'Poppins', serif;
+    letter-spacing: 1px;
+}
+/* Section Titles */
+.section-title {
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1B5E20; /* evergreen */
+}
+
+/* Cards */
+.card {
+    background-color: #f5f5f5;
+    border: 1px solid #C8E6C9; /* pale green */
+    border-radius: 10px;
+}
+
+.card-title {
+    color: #1B5E20;
+    font-weight: 700;
+}
+
+/* Custom Project Tabs (Pills) */
+.nav-pills .nav-link {
+    color: #1B5E20; /* Evergreen text */
+    font-weight: 600;
+    margin: 0 5px;
+    border-radius: 30px; /* Gives them a nice rounded shape */
+    transition: all 0.3s ease;
+}
+
+/* When the tab is clicked/active */
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+    background-color: #1B5E20 !important; 
+    color: #ffffff !important;
+}
+
+/* Hover effect for inactive tabs */
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: #E8F5E9; /* Soft green hover */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0d75b2; /* water blue */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #039BE5;
+}
+
+.btn-outline-primary {
+    color: #1B5E20;
+    border-color: #1B5E20;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1B5E20;
+    color: #fff;
+}
+
+/* Light sections */
+.bg-light {
+    background-color: #fffdfd !important; /* soft eco green */
+}
+
+/* Carousel */
+.carousel-item img {
+    max-height: 550px;
+    width: 100%;
+    object-fit: contain;
+    padding-bottom: 40px;
+}
+
+
+/*.carousel-caption {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 3px solid #0277BD; 
+    color: #1B1B1B;
+}  */
+
+.fa-arrow-left,
+.fa-arrow-right {
+    color: #1B1B1B;
+}
+
+/* Modal Zoom View */
+.modal-content {
+    background-color: #f2f2f2 !important;
+    border: 2px solid #0277BD;
+}
+
+.modal-body img {
+    border-radius: 4px;
+}
+
+/* Gallery Images */
+.gallery-img {
+    border: 2px solid #C8E6C9;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background: #E8F5E9;
+    color: #1B5E20;
+    padding: 40px 0;
+    border-top: 2px solid #1B5E20;
+}
