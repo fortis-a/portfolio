@@ -3,7 +3,7 @@ body {
     background-color: #F7FDF8; /* soft eco white-green */
     color: #1B1B1B;
     scroll-behavior: smooth;
-    font-family: "Inter", sans-serif;
+    font-family: "poppins", sans-serif;
 }
 
 /* Navbar */
@@ -25,7 +25,7 @@ body {
 /* Hero */
 .hero {
     background-color: #E8F5E9; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.233)), url('../img/Contour.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.336)), url('../img/Contour.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,8 +43,10 @@ body {
     color: #ffffff;
 }
 .hero h1 {
-    font-family: 'Poppins', serif;
+    font-family: 'overpass', serif;
+    font-size: 5rem;
     letter-spacing: 1px;
+    text-shadow: 3px 2px #10101088;
 }
 /* Section Titles */
 .section-title {
