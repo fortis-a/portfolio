@@ -12,7 +12,13 @@ body {
     border-bottom: 2px solid #1B5E20; /* evergreen */
 }
 
-.navbar-brand,
+.navbar-brand{
+    font-family: 'overpass', serif;
+    font-weight: 600;
+    color: #134116;
+}
+
+
 .nav-link {
     color: #1B5E20 !important;
     font-weight: 600;
@@ -155,6 +161,7 @@ body {
 footer {
     background: #E8F5E9;
     color: #1B5E20;
-    padding: 40px 0;
+    padding: 20px 0;
     border-top: 2px solid #1B5E20;
+    align-items: start;
 }
